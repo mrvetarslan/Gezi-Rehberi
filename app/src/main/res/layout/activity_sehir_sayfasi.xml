@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/geriliarkaplan"
+    tools:context=".SehirSayfasi">
+
+    <TextView
+        android:id="@+id/uretim2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/ustbaslik"
+        android:text="Gezi Rehberi | 2023"
+        android:textColor="#44240A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/sehirIsmi"
+        android:layout_width="382dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/ustbaslik"
+        android:textAlignment="center"
+        android:textColor="#FDA000"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/geriButonu"
+        android:layout_width="92dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="anasayfaDon"
+        android:text="GERİ"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/genelButon"
+        android:layout_width="94dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="genelBilgi"
+        app:layout_constraintBottom_toTopOf="@+id/yemek"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/genel" />
+
+    <ImageView
+        android:id="@+id/gezilecekyerlerButon"
+        android:layout_width="94dp"
+        android:layout_height="98dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="gezilecekYerler"
+        app:layout_constraintBottom_toTopOf="@+id/yoresel"
+        app:layout_constraintEnd_toStartOf="@+id/tarihButon"
+        app:layout_constraintStart_toEndOf="@+id/genelButon"
+        app:srcCompat="@drawable/oneriler" />
+
+    <ImageView
+        android:id="@+id/tarihButon"
+        android:layout_width="94dp"
+        android:layout_height="98dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="14dp"
+        android:onClick="tarih"
+        app:layout_constraintBottom_toTopOf="@+id/ulasim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/tarih" />
+
+    <ImageView
+        android:id="@+id/yemekButon"
+        android:layout_width="94dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="yemekler"
+        app:layout_constraintBottom_toTopOf="@+id/havadurumu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/yemekler" />
+
+    <ImageView
+        android:id="@+id/yoreselButon"
+        android:layout_width="94dp"
+        android:layout_height="98dp"
+        android:layout_marginBottom="175dp"
+        android:onClick="yoresel"
+        app:layout_constraintBottom_toTopOf="@+id/uretim2"
+        app:layout_constraintEnd_toStartOf="@+id/ulasimButon"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toEndOf="@+id/yemekButon"
+        app:srcCompat="@drawable/yoresel" />
+
+    <ImageView
+        android:id="@+id/ulasimButon"
+        android:layout_width="94dp"
+        android:layout_height="98dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="ulasim"
+        app:layout_constraintBottom_toTopOf="@+id/muzik"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ulasim" />
+
+    <ImageView
+        android:id="@+id/havadurumuButon"
+        android:layout_width="94dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="60dp"
+        android:onClick="havaDurumu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/havadurumu" />
+
+    <ImageView
+        android:id="@+id/muzikButon"
+        android:layout_width="94dp"
+        android:layout_height="98dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="60dp"
+        android:onClick="muzik"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/muzik" />
+
+    <TextView
+        android:id="@+id/genelBilgi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/ustbaslik"
+        android:text="Genel Bilgi"
+        android:textColor="#FDA000"
+        app:layout_constraintBottom_toTopOf="@+id/genelButon"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/gezilecekYerler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/ustbaslik"
+        android:text="Gezilecek Yerler"
+        android:textColor="#FDA000"
+        app:layout_constraintBottom_toTopOf="@+id/gezilecekyerlerButon"
+        app:layout_constraintEnd_toStartOf="@+id/tarih"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toEndOf="@+id/genelBilgi" />
+
+    <TextView
+        android:id="@+id/tarih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/ustbaslik"
+        android:text="Tarih"
+        android:textColor="#FDA000"
+        app:layout_constraintBottom_toTopOf="@+id/tarihButon"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/yemek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/ustbaslik"
+        android:text="Yemekler"
+        android:textColor="#FDA000"
+        app:layout_constraintBottom_toTopOf="@+id/yemekButon"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/yoresel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/ustbaslik"
+        android:text="Yöresel"
+        android:textColor="#FDA000"
+        app:layout_constraintBottom_toTopOf="@+id/yoreselButon"
+        app:layout_constraintEnd_toStartOf="@+id/ulasim" />
+
+    <TextView
+        android:id="@+id/ulasim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/ustbaslik"
+        android:text="Ulaşım"
+        android:textColor="#FDA000"
+        app:layout_constraintBottom_toTopOf="@+id/ulasimButon"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/havadurumu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/ustbaslik"
+        android:text="Hava Durumu"
+        android:textColor="#FDA000"
+        app:layout_constraintBottom_toTopOf="@+id/havadurumuButon"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/muzik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/ustbaslik"
+        android:text="Müzik"
+        android:textColor="#FDA000"
+        app:layout_constraintBottom_toTopOf="@+id/muzikButon"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
